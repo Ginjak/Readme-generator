@@ -1,7 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
+const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
+const writeToFile = util.promisify(fs.writeFile);
 
 // inquirer questions
 const questions = () => {
@@ -10,6 +12,11 @@ const questions = () => {
       type: "input",
       message: "Title of my project",
       name: "title",
+    },
+    {
+      type: "input",
+      message: "Short description of a project",
+      name: "description",
     },
     {
       type: "input",
@@ -24,7 +31,7 @@ const questions = () => {
     {
       type: "list",
       message: "Usage of a project",
-      choices: ["MIT", "ISC", "GNU  v3.0"],
+      choices: ["MIT", "ISC", "GPL", "0BSD"],
       name: "license",
     },
     {
@@ -51,21 +58,22 @@ const questions = () => {
 };
 // questions();
 
-async function data() {
+async function init() {
   try {
     const data = await questions();
     console.log(data);
+    writeToFile("readme_test.md", generateMarkdown(data));
   } catch (err) {
     console.log(err);
   }
 }
 
-data();
+init();
 // function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 
 // function to initialize program
-function init() {}
+// function init() {}
 
 // function call to initialize program
-init();
+// init();

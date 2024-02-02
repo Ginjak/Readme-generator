@@ -1,8 +1,6 @@
-// function to generate markdown for README
-generateMarkdown = (data) => {
-  return `# ${data.title} [![License](https://img.shields.io/badge/License-${data.license}-blue.svg)](https://opensource.org/licenses/${data.license})
+# as [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   ## Description
-  ${data.description}
+  
   # Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
@@ -28,7 +26,3 @@ generateMarkdown = (data) => {
 
   ## Questions
   Content for Section 4 goes here.
-`;
-};
-
-module.exports = generateMarkdown;
