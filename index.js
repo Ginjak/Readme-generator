@@ -41,8 +41,8 @@ const questions = () => {
     },
     {
       type: "input",
-      message: "Add testingasd instructions",
-      name: "contributing",
+      message: "Add testing instructions",
+      name: "testing",
     },
     {
       type: "input",
@@ -52,7 +52,7 @@ const questions = () => {
     {
       type: "input",
       message: "Add your email address",
-      name: "github",
+      name: "email",
     },
   ]);
 };

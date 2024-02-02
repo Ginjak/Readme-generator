@@ -8,7 +8,7 @@ generateMarkdown = (data) => {
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
-  - [Test](#test)
+  - [Tests](#tests)
   - [Questions](#questions)
 
   ## Installation
@@ -23,11 +23,11 @@ generateMarkdown = (data) => {
   ## Contributing
   Content for Section 4 goes here.
 
-  ## Test
+  ## Tests
   Content for Section 4 goes here.
 
   ## Questions
-  Content for Section 4 goes here.
+  See my other project on my GitHub account [${data.github}](https://github.com/${data.github}/) and if you have any questions you can send me an email [${data.email}](mailto:${data.email})
 `;
 };
 

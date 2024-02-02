@@ -1,4 +1,4 @@
-# as [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+#  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   ## Description
   
   # Table of Contents
@@ -6,7 +6,7 @@
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
-  - [Test](#test)
+  - [Tests](#tests)
   - [Questions](#questions)
 
   ## Installation
@@ -21,8 +21,8 @@
   ## Contributing
   Content for Section 4 goes here.
 
-  ## Test
+  ## Tests
   Content for Section 4 goes here.
 
   ## Questions
-  Content for Section 4 goes here.
+  See my other project on my GitHub account [](https://github.com//) and if you have any questions you can send me an email [gintaras.jakimavicius@yahoo.com](mailto:gintaras.jakimavicius@yahoo.com)
