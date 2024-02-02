@@ -12,22 +12,27 @@ generateMarkdown = (data) => {
   - [Questions](#questions)
 
   ## Installation
-  Content for Section 1 goes here.
+  ${data.installation}
+  \`\`\`bash
+  npm install
+  \`\`\`
 
   ## Usage
-  Content for Section 2 goes here.
+  \`\`\` bash 
+  ${data.usage}  
+  \`\`\`
  
   ## License
-  Content for Section 3 goes here.
+  This project is licensed under the [${data.license}](https://opensource.org/licenses/${data.license}) license.
 
   ## Contributing
-  Content for Section 4 goes here.
+  ${data.contributing}
 
   ## Tests
-  Content for Section 4 goes here.
+  ${data.testing}
 
   ## Questions
-  See my other project on my GitHub account [${data.github}](https://github.com/${data.github}/) and if you have any questions you can send me an email [${data.email}](mailto:${data.email})
+  Feel free to explore my other projects on my [GitHub profile](https://github.com/${data.github}/). If you have any questions, you can reach out to me via email at [${data.email}](mailto:${data.email}).
 `;
 };
 
