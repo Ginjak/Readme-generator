@@ -40,6 +40,8 @@ node index.js
 - Answer the prompted questions to provide information about your project.
 - The application will dynamically generate a README file based on your responses.
 
+![](/assets/img/preview.gif)
+
 ## Dependecies
 
 - Node.js
