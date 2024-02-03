@@ -13,7 +13,7 @@ const questions = () => {
   return inquirer.prompt([
     {
       type: "input",
-      message: "Title of my project",
+      message: "Title of a project",
       name: "title",
     },
     {
@@ -59,7 +59,7 @@ const questions = () => {
     },
     {
       type: "list",
-      message: "Usage of a project",
+      message: "Choose project license",
       choices: ["MIT", "ISC", "GPL", "0BSD"],
       name: "license",
     },
@@ -91,7 +91,7 @@ async function init() {
   try {
     const data = await questions();
     console.log(data);
-    writeToFile("readme_test.md", generateMarkdown(data));
+    writeToFile("README_generated.md", generateMarkdown(data));
   } catch (err) {
     console.log(err);
   }
