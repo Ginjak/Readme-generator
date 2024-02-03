@@ -24,9 +24,35 @@ const questions = () => {
       name: "installation",
     },
     {
+      type: "list",
+      message: "Display shortcode for instalation?",
+      choices: ["Yes", "No"],
+      name: "bash",
+      default: true,
+    },
+    {
+      type: "input",
+      message: "Instalation shortcode",
+      name: "installSc",
+      when: (answers) => answers.bash === "Yes",
+    },
+    {
       type: "input",
       message: "Usage of a project",
       name: "usage",
+    },
+    {
+      type: "list",
+      message: "Display shortcode for usage?",
+      choices: ["Yes", "No"],
+      name: "usageBash",
+      default: true,
+    },
+    {
+      type: "input",
+      message: "Usage shortcode",
+      name: "usageSc",
+      when: (answers) => answers.usageBash === "Yes",
     },
     {
       type: "list",
