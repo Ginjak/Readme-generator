@@ -1,11 +1,14 @@
 const fs = require("fs");
-const path = require("path");
 const inquirer = require("inquirer");
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 const writeToFile = util.promisify(fs.writeFile);
 
-// inquirer questions
+/* ------------------
+        Functions
+--------------------- */
+
+// Inquirer questions
 const questions = () => {
   return inquirer.prompt([
     {
@@ -82,8 +85,8 @@ const questions = () => {
     },
   ]);
 };
-// questions();
 
+// Async function to fetch answers and after create a readme file with generated data with generateMakrdown function
 async function init() {
   try {
     const data = await questions();
@@ -94,12 +97,5 @@ async function init() {
   }
 }
 
+// Run async function
 init();
-// function to write README file
-// function writeToFile(fileName, data) {}
-
-// function to initialize program
-// function init() {}
-
-// function call to initialize program
-// init();

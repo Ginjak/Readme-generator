@@ -16,6 +16,7 @@ The Dynamic README Generator is a Node.js command-line application designed to s
 
 ## Installation
 
+- [GitHub repository](https://github.com/Ginjak/Readme-generator)
 - Clone the repository to your local machine with SSH.
 
 ```bash

@@ -42,4 +42,5 @@ generateMarkdown = (data) => {
 `;
 };
 
+// Export module
 module.exports = generateMarkdown;
